@@ -1,69 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def get_first_name_of_season_winner(data, season)
   data.each do |season_num,season_data|
       if season_num == season
@@ -159,20 +96,20 @@ end
 
 
 
-def get_average_age_for_season(data, season)
-ages = []
-  data.each do |season_num,season_data|
-      if season_num == season
-    season_data.each do |contestant_data|
-      contestant_data.each do |detail, data|
-        if detail == "age"
-              ages << data.to_i
-            end
-          end
-        end
-      end
-    end
-return ages.inject{|num_1, num_2| num_1 + num_2 }.to_i/ ages.size
-end
+# def get_average_age_for_season(data, season)
+# ages = []
+#   data.each do |season_num,season_data|
+#       if season_num == season
+#     season_data.each do |contestant_data|
+#       contestant_data.each do |detail, data|
+#         if detail == "age"
+#               ages << data.to_i
+#             end
+#           end
+#         end
+#       end
+#     end
+# return ages.inject{|num_1, num_2| num_1 + num_2 }.to_i/ ages.size
+# end
 
 
